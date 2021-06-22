@@ -58,7 +58,7 @@
         height: 90vh;
         width: 75%;
 color: teal;
-overflow-y: scroll;
+
 animation: kamal 5s;
 animation-delay: 200ms;
 
@@ -220,6 +220,7 @@ animation-delay: 200ms;
     }
     .box2{
         padding: 20px;
+        overflow-y: scroll;
     }
     .box2 img{
         height: 50px;
@@ -263,6 +264,7 @@ animation-delay: 200ms;
     }
     .box2{
         padding: 20px;
+        overflow-y: scroll;
     }
     .circle1 {
     top: 5%;
