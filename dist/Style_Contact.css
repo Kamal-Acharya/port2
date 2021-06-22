@@ -58,6 +58,7 @@
         height: 90vh;
         width: 75%;
 color: teal;
+overflow-y: scroll;
 animation: kamal 5s;
 animation-delay: 200ms;
 
