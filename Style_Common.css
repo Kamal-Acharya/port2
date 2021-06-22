@@ -93,7 +93,7 @@ li a {
 }
 
 li a:hover {
-    text-decoration: underline;
+  
 }
 @media (max-width:850px) {
     .glass{
