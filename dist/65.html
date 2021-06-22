@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    main {
+        height: 100vh;
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .glass {
+        background-color: white;
+        min-height: 80vh;
+        width: 60%;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 2rem;
+        display: flex;
+
+    }
+
+    .circle1,
+    .circle2 {
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+
+    .circle1 {
+        top: -1%;
+        left: 73%;
+
+    }
+
+    .circle2 {
+        top: 77%;
+        left: 15%;
+    }
+
+    .box1 {
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        height: 90vh;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        border-radius: top right 20px;
+        border-radius: bottom left 20px;
+    }
+
+    .box2 {
+        height: 90vh;
+        width: 75%;
+color: teal;
+animation: kamal 5s;
+animation-delay: 200ms;
+
+
+    }
+ 
+
+    .box1 img {
+        height: 20%;
+        width: 10%;
+        border-radius: 50%;
+        padding-left: 20px;
+        top: 54px;
+        position: absolute;
+    }
+
+    ul {
+        top: 35%;
+        position: relative;
+        left: 26%;
+        list-style: none;
+    }
+
+    ul li {
+        margin-top: 20px;
+
+
+    }
+
+    li a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+    .box2 h1{
+        font-size: 5rem;
+        font-family: sans-serif;
+        padding-left: 20px;
+    }
+    .box2 p{
+        font-size: 3rem;
+        font-family: initial;
+        padding-left: 20px;
+    }
+     .con{
+        margin: 30px;
+        font-family: unset;
+        font-size: 3rem;
+    }
+    @keyframes kamal{
+        0%{
+            opacity: 0;
+            transform: translateX(300px);        }
+        40%{
+            opacity: 0.5;
+            
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+
+        }
+    }
+    footer
+{
+    margin:60px  50px;
+}  
+@media (max-width:998px) {
+    
+} 
+@media (max-width:750px) {
+    html{
+        font-size: 65%;
+    }
+    .glass{
+        flex-direction: column;
+        height: 50vh;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    
+    .box1{
+      height: 20vh;
+      display: flex;  
+      width: 100%;
+    }
+    .box1 img{
+        top:0%;
+    }
+    .box1 img {
+        height: 10%;
+        width: 13%;
+     
+        top: 10%;
+     
+    }
+    .circle1 {
+    top: 6%;
+    left: 71%;
+}
+.circle2 {
+    top: 82%;
+    left: 15%;
+}
+
+    
+} 
+@media (max-width:550px) {
+    html{
+        font-size: 55%;
+    }
+    .glass{
+        flex-direction: column;
+        height: 30vh;
+        width: 80%;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    .circle2 {
+    top: 82%;
+    left: 5%;
+}
+.circle1 {
+    top: 6%;
+    left: 80%;
+}
+    
+    .box1{
+      height: 20vh;
+      display: flex;  
+      width: 100%;
+    }
+    .box1 img{
+        top:0%;
+    }
+    .box1 img {
+        height: 10%;
+        width: 15%;
+     
+        top: 10%;
+     
+    }
+    .box2{
+        padding: 20px;
+    }
+
+    
+} 
+@media (max-width:360px) {
+    html{
+        font-size: 40%;
+    }
+    .glass{
+        flex-direction: column;
+       min-height: 79vh;
+       width: 80%;
+    }
+    li{
+        font-size: 8px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    
+    .box1{
+      min-height: 20vh;
+      display: flex;  
+      width: 100%;
+    }
+   
+    .box1 img {
+        height: 10%;
+        width: 20%;
+     
+        top: 12%;
+     
+    }
+    .box2{
+        padding: 20px;
+    }
+
+    .circle1 {
+    top: 5%;
+    left: 79%;
+}
+.circle2 {
+    top: 82%;
+    left: 2%;
+} 
+} 
+
+</style>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="box1">
+                <img src="InShot_20210126_203706270.jpg" alt="">
+                <ul>
+                    <li> <a href="65.html">home</a></li>
+                    <li> <a href="index.html">skills</a></li>
+                    <li> <a href="contact.html">contact</a></li>
+
+
+                </ul>
+            </div>
+            <div class="box2" id="box" class="transition-fade">
+                <h1>HI,</h1>
+                <p>Looking for a <br> web developer!!!</p>
+                <div class="con">
+                    I am Kamal Acharya ,I basiaclly build Websites.
+                </div>
+                
+  <footer>copyright&copy;kadev3158</footer>
+            </div>
+        </section>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      
+    </main>
+  
+</body>
+
+
+</html>
