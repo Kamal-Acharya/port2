@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    main {
+        height: 100vh;
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .glass {
+        background-color: white;
+        min-height: 80vh;
+        width: 60%;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 2rem;
+        display: flex;
+
+    }
+
+    .circle1,
+    .circle2 {
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+
+    .circle1 {
+        top: -1%;
+        left: 73%;
+
+    }
+
+    .circle2 {
+        top: 77%;
+        left: 15%;
+    }
+
+    .box1 {
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        height: 90vh;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        border-radius: top right 20px;
+        border-radius: bottom left 20px;
+    }
+
+    .box2 {
+        height: 90vh;
+        width: 75%;
+        animation-name: sample;
+        animation-duration: 10s; 
+      
+        
+    }
+
+    .box1 img {
+        height: 20%;
+        width: 10%;
+        border-radius: 50%;
+        padding-left: 20px;
+        top: 54px;
+        position: absolute;
+    }
+
+    ul {
+        top: 35%;
+        position: relative;
+        left: 26%;
+        list-style: none;
+    }
+
+    ul li {
+        margin-top: 20px;
+
+
+    }
+
+    li a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .box2 p {
+        
+        margin: 40px;
+        padding-left: 50px;
+        font-size: 4rem;
+        /* font-family:  sans-serif; */
+        font-family: 'Proza Libre', sans-serif;
+
+    }
+ 
+
+    @keyframes sample {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+
+        30% {
+            opacity: 1;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+
+        }
+
+    }
+
+    .item {
+        height: 80px;
+        width: 60%;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 36px;
+        margin-left: 70px;
+        position: relative;
+    }
+
+    .item h2 {
+        padding-left: 20px;
+        color: coral;
+        font-family: monospace;
+    }
+
+    .range {
+        width: 200px;
+        height: 14px;
+        background-color: white;
+        top: 30%;
+        left: 20px;
+        position: relative;
+        border: 1px solid coral;
+        border-radius: 20px;
+    }
+
+    .per1,
+    .per2,
+    .per3 {
+        background-color: #65dfc9;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 14px;
+        position: relative;
+
+    }
+
+    .per1 {
+        width: 80%;
+    }
+
+    .per2 {
+        width: 60%;
+    }
+
+    .per3 {
+        width: 50%;
+    }
+    .per3 {
+        width: 50%;
+    }
+
+    small {
+        float: right;
+    }
+    button{
+        outline: none;
+        background: none;
+        margin-top: 20px;
+        font-family: fantasy;
+        font-size: 1rem;
+        border: none;
+
+    }
+    #box{
+    opacity: 1;
+    transition: 500ms;
+
+}
+html.is-animating#box{
+    opacity: 0;
+}
+ 
+@media (max-width:750px) {
+    html{
+        font-size: 65%;
+    }
+    .glass{
+        flex-direction: column;
+        height: 50vh;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    
+    .box1{
+      height: 20vh;
+      display: flex;  
+      width: 100%;
+    }
+    .box1 img{
+        top:0%;
+    }
+    .box2 p{
+        font-size: 2rem;
+    }
+    .box1 img {
+        height: 10%;
+        width: 13%;
+     
+        top: 10%;
+     
+    }
+    .circle1 {
+    top: 6%;
+    left: 71%;
+}
+.circle2 {
+    top: 82%;
+    left: 15%;
+}
+.item{
+    height: 40px;
+    top: -6%;
+    width: 80%;
+}
+.range{
+    width: 142px;
+    top: 10%;
+}
+
+    
+} 
+@media (max-width:550px) {
+    html{
+        font-size: 45%;
+    }
+   p{
+       font-size: 20px;
+   }
+    .glass{
+        flex-direction: column;
+        height: 30vh;
+        width: 80%;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    .circle2 {
+    top: 82%;
+    left: 5%;
+}
+.circle1 {
+    top: 6%;
+    left: 80%;
+}
+    
+    .box1{
+     min-height: 15vh;
+      display: flex;  
+      width: 100%;
+    }
+    .box1 img{
+        top:0%;
+    }
+    .box1 img {
+        height: 10%;
+        width: 20%;
+     
+        top: 10%;
+     
+    }
+    .box2{
+        padding: -24px;
+    }
+    .item{
+    height: 40px;
+    top: -6%;
+    width: 100%;
+    margin-left: 39px;
+}
+.range{
+    width: 142px;
+    top: 10%;
+}
+    
+} 
+@media (max-width:360px) {
+    html{
+        font-size: 40%;
+    }
+    .circle1 {
+    top: 5%;
+    left: 79%;
+}
+.circle2 {
+    top: 82%;
+    left: 2%;
+}
+    .glass{
+        flex-direction: column;
+       min-height: 79vh;
+       width: 82%;
+    }
+    
+.box2 p{
+    font-size: 2rem;
+    margin: -10px;
+        padding-left: 50px;
+}
+    li{
+        font-size: 8px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        top:54%;
+        left: 8%;
+    }
+    
+    .box1{
+      min-height: 20vh;
+      display: flex;  
+      width: 100%;
+    }
+   
+    .box1 img {
+        height: 10%;
+        width: 20%;
+     
+        top: 12%;
+     
+    }
+    .box2{
+        padding: 20px;
+    }
+    .item{
+    height: 40px;
+    top: -6%;
+    width: 100%;
+    margin-left: 2px;
+}
+.range{
+    width: 110px;
+    top: 10%;
+}
+
+    
+} 
+
+</style>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="box1">
+                <img src="InShot_20210126_203706270.jpg" alt="">
+                <ul>
+                  <li> <a href="65.html">home</a></li>
+                  <li> <a href="index.html">skills</a></li>
+                  <li> <a href="contact.html">contact</a></li>
+                    
+
+                </ul>
+            </div>
+            <div class="box2" id="box"  class="transition-fade">
+                <p>SKILLS</p>
+                <div class="item" id="one"  >
+                    <h2>HTML</h2>
+                    <div class="range">
+                        <small>70%</small>
+                        <div class="per1"></div>
+                    </div>
+                </div>
+                <div class="item" id="two">
+                    <h2>CSS</h2>
+                    <div class="range">
+                        <small>50%</small>
+                        <div class="per2"></div>
+                    </div>
+                </div>
+                <div class="item" id="three">
+                    <h2>JS</h2>
+
+                    <div class="range">
+                        <small>45%</small>
+                        <div class="per3"></div>
+                    </div>
+                </div>
+                <div class="item" id="four">
+                    <h2>NODE-JS</h2>
+
+                    <div class="range">
+                        <small>20%</small>
+                        <div class="per3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+
+</body>
+
+
+</html>
